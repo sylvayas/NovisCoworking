@@ -12,11 +12,11 @@ export default function Footer() {
   const menuList = getMenuList(pathname);
 
   return (
-    <section className="container px-0 xl:px-8 bg-novis_green min-h-[50vh] h-fit xl:h-[500px] relative">
+    <section className="container px-0 xl:px-8 bg-gradient-to-r from-[#939496] to-[#173661] min-h-[50vh] h-fit xl:h-[500px] relative">
       <div className="flex flex-col xl:flex-row xl:h-full relative w-full xl:items-stretch gap-8">
-        <div className="py-14 w-full xl:w-[350px] bg-black/90 flex flex-col gap-4 px-4 sm:px-8 md:px-10 md:gap-6 items-center xl:items-start justify-center">
-          <Icons.logo_black className="size-20" />
-          <p className="text-white text-sm w-4/5 sm:w-3/4 md:w-1/2 text-center xl:text-left xl:w-full">
+        <div className="py-14 w-full xl:w-[350px] bg-[#939496] flex flex-col gap-4 px-4 sm:px-8 md:px-10 md:gap-6 items-center xl:items-start justify-center">
+          <Icons.logo_black className="size-22" />
+          <p className="text-white text-sm w-4/5 sm:w-3/4 md:w-1/2 text-center xl:text-left xl:w-full top-1">
             Des aménagements attractifs, conçus pour la collaboration et le développement des réseaux professionnels.
           </p>
           <div className="flex items-center gap-4">
@@ -60,7 +60,7 @@ export default function Footer() {
             </div>
           </div>
           <div className="text-white">
-            <h3 className="text-lg font-semibold">NOVIS CO-WORKING</h3>
+            <h3 className="text-lg font-semibold">AITECH-CI</h3>
             <div className="mt-2 grid grid-cols-2 md:grid-cols-1">
               {menuList[3].menus[0].href && (
                 <Link href={menuList[3].menus[0].href} className="hover:font-semibold transition-all duration-200">

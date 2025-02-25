@@ -256,6 +256,7 @@ export default function Content({ group, space }: { group: any; space: any }) {
             </div>
           </div>
         </div>
+        
         <Card>
           <CardHeader>
             <CardTitle>Détail du paiement</CardTitle>

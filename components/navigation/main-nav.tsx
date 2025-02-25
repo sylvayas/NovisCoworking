@@ -36,7 +36,7 @@ export function MainNav() {
                 <NavigationMenuList>
                     <NavigationMenuItem>
                         <Link href={menuList[0].menus[0].href} legacyBehavior passHref>
-                            <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), `${menuList[0].menus[0].active && "font-bold text-novis_orange"}`)} >
+                            <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), `${menuList[0].menus[0].active && "font-bold text-[#FFA500]"}`)} >
                                 {menuList[0].menus[0].label}
                             </NavigationMenuLink>
                         </Link>
@@ -55,7 +55,7 @@ export function MainNav() {
                                             <Icons.logo className="h-20 w-20 mb-4" />
 
                                             <p className="text-sm leading-tight text-white">
-                                                Bienvenue au sein des espaces de Novis coworking à Cocody.
+                                                Bienvenue au sein des espaces de AITECH-CI à Cocody.
                                             </p>
                                         </a>
                                     </NavigationMenuLink>
