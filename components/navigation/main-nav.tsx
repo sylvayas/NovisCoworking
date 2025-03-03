@@ -49,10 +49,10 @@ export function MainNav() {
                                 <li className="row-span-6">
                                     <NavigationMenuLink asChild>
                                         <a
-                                            className="flex h-full w-full ring-2 ring-novis_yellow select-none flex-col justify-end rounded-md bg-novis_green p-6 no-underline outline-none focus:shadow-md"
+                                            className="flex h-full w-full ring-2 ring-novis_yellow select-none flex-col justify-end rounded-md bg-[#173661] p-6 no-underline outline-none focus:shadow-md"
                                             href={menuList[1].menus[0].href}
                                         >
-                                            <Icons.logo className="h-20 w-20 mb-4" />
+                                            <Icons.logo className="h-24 w-24 mb-4" />
 
                                             <p className="text-sm leading-tight text-white">
                                                 Bienvenue au sein des espaces de AITECH-CI à Cocody.
@@ -132,10 +132,10 @@ export function MainNav() {
                                 <li className="row-span-6">
                                     <NavigationMenuLink asChild>
                                         <a
-                                            className="flex h-full w-full ring-2 ring-novis_yellow select-none flex-col justify-end rounded-md bg-novis_green p-6 no-underline outline-none focus:shadow-md"
+                                            className="flex h-full w-full ring-2 ring-novis_yellow select-none flex-col justify-end rounded-md bg-[#173661] p-6 no-underline outline-none focus:shadow-md"
                                             href={menuList[3].menus[0].href}
                                         >
-                                            <Icons.logo className="h-20 w-20 mb-4" />
+                                            <Icons.logo className="h-24 w-24 mb-4" />
 
                                             <p className="text-sm leading-tight text-white">
                                             Découvrez notre galerie.

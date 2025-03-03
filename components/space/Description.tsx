@@ -20,7 +20,7 @@ export default function Description(
 ) {
 
     return (
-        <section className="relative max-w-[1400px] mx-auto bg-gray-900 container px-2 md:px-8 py-20 lg:py-32">
+        <section className="relative max-w-[1400px] mx-auto bg-[#173661] container px-2 md:px-8 py-20 lg:py-32">
 
             <div className="relative gap-8 items-stretch py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
                 <div className="mt-4 md:mt-0">
@@ -86,11 +86,11 @@ export default function Description(
                         {space.items.map((subSpace: any, key: number) => {
                             return <Card key={key} className={cn("w-full mx-4 relative max-w-[320px] sm:max-w-lg md:max-w-2xl",)}>
                                 <SpaceCarousel images={subSpace.images.map((image: any) => image.src)} />
-                                <CardHeader className='bg-gray-900'>
+                                <CardHeader className='bg-[#173661]'>
                                     <CardTitle className="text-sm md:text-lg text-novis_orange">{subSpace.title}</CardTitle>
                                     <CardDescription className='text-white text-sm '>{subSpace.description}</CardDescription>
                                 </CardHeader>
-                                <CardContent className='bg-gray-900'>
+                                <CardContent className='bg-[#173661]'>
                                     <div className="font-light text-gray-300 grid md:grid-cols-2">
                                         {subSpace.options
                                             && <div>

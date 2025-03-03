@@ -17,8 +17,8 @@ const fontLora = Lora({
 })
 
 export const metadata: Metadata = {
-  title: "Novis",
-  description: "Novis",
+  title: "AITECH-CI",
+  description: "AITECH-CI",
 };
 
 export default function RootLayout({

@@ -27,7 +27,7 @@ export default function SiteHeader() {
             className={cn(
               buttonVariants(),
               "max-w-32 md:max-w-48 gap-2 overflow-hidden whitespace-pre",
-              "group relative w-full justify-center gap-2 rounded-md transition-all duration-300 ease-out hover:ring-2 hover:ring-secondary hover:ring-offset-2"
+              "group relative w-full justify-center gap-2 rounded-md transition-all duration-300 ease-out hover:ring-2 hover:ring-primary hover:ring-offset-2"
             )}
             href="/reservation"
           >

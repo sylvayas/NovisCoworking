@@ -81,7 +81,7 @@ export default function FormSection() {
                     className="text-sm ml-4"
                   >
                     <small className="block">Mail</small>
-                    <strong>info@noviscoworking.com</strong>
+                    <strong>info@aitech.ci.com</strong>
                   </a>
                 </li>
               </ul>
@@ -166,7 +166,7 @@ export default function FormSection() {
             <button
               type="submit"
               disabled={isSubmitting}
-              className={`bg-novis_orange text-white tracking-wide rounded-md text-sm px-4 py-3 w-full !mt-6 ${
+              className={`bg-[#FFA500] text-white tracking-wide rounded-md text-sm px-4 py-3 w-full !mt-6 ${
                 isSubmitting
                   ? "opacity-50 cursor-not-allowed"
                   : "hover:bg-novis_orange-dark"

@@ -11,7 +11,7 @@ export default function Missiion_Charte() {
     return (
         <section className="container min-h-[300px] py-14 relative">
             {/* <TitleSection title={"Nos différents espaces situés à Cocody"} /> */}
-            <div className="bg-black">
+            <div className="bg-[#173661]">
                 <div className="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
                     <div className="mt-4 md:mt-0 text-white">
                         <h2 className="text-novis_yellow mb-4  text-2xl md:text-4xl tracking-tight font-saudagar">NOTRE MISSION</h2>

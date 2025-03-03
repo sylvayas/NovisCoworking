@@ -31,7 +31,7 @@ export const ContactEmail: React.FC<ContactEmailData> = ({
     <Body style={main}>
       <Container style={container}>
         <Img
-          src={`${process.env.NEXT_PUBLIC_BASE_URL}/images/logo.png`}
+          src={`${process.env.NEXT_PUBLIC_BASE_URL}/images/Logo Original.png`}
           width="100"
           height="100"
           alt="Novis Coworking"

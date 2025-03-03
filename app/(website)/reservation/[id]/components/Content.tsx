@@ -22,6 +22,7 @@ import { toast } from "sonner";
 import { useRouter } from "next/navigation";
 import dayjs from "dayjs";
 
+
 interface IFormInput {
   name: string;
   email: string;
@@ -37,6 +38,7 @@ export default function Content({ group, space }: { group: any; space: any }) {
   const [totalAmount, setTotalAmount] = useState<number>(0);
   const [data, setData] = useState<any>();
   const [isMonthlyTarif, setIsMonthlyTarif] = useState(false);
+  const [notification, setNotification] = useState<string>('');
   
   const {
     register,
@@ -45,6 +47,17 @@ export default function Content({ group, space }: { group: any; space: any }) {
   } = useForm<IFormInput>({
     mode: "onChange",
   });
+
+  // const handleDateSelect = (days: Date[] | null) => {
+  //   if (days && days.length > 0) {
+  //     const selectedDate = days[0];
+  //     if (dates.some((date) => date.getTime() === selectedDate.getTime())) {
+  //       toast.error("Cette date a déjà été sélectionnée. Veuillez choisir une autre date.");
+  //     } else {
+  //       setDates(days);
+  //     }
+  //   }
+  // };
 
   const selectedSpace =
     espaces
@@ -99,8 +112,8 @@ export default function Content({ group, space }: { group: any; space: any }) {
             "Content-Type": "application/json",
           },
           body: JSON.stringify({
-            subject: "Demande de réservation Novis Coworking",
-            to: [data.email, "info@noviscoworking.com"],
+            subject: "Demande de réservation AITECH-CI",
+            to: [data.email, "info@aitech-ci.com"],
             emailData: {
               coworkingName: space.title,
               category: group.title,
@@ -152,8 +165,8 @@ export default function Content({ group, space }: { group: any; space: any }) {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          subject: "Facture Novis Coworking",
-          to: [data.email, "info@noviscoworking.com"],
+          subject: "Facture AITECH-CI",
+          to: [data.email, "info@aitech-ci.com"],
           emailData: {
             coworkingName: space.title,
             category: group.title,
@@ -188,6 +201,8 @@ export default function Content({ group, space }: { group: any; space: any }) {
     }
   }, [paymentStatus]);
 
+  // la partie details de lespace
+
   return (
     <section className="container min-h-[300px] py-14 relative">
       <TitleSection title={"Détail de réservation"} />
@@ -214,6 +229,8 @@ export default function Content({ group, space }: { group: any; space: any }) {
                 <div className="ml-auto font-medium">{space?.title}</div>
               </div>
             </div>
+
+            {/* Les Informations personnelles */}
 
             <div className="grid gap-6 rounded-lg border p-4">
               <CardTitle>Informations personnelles</CardTitle>
@@ -256,7 +273,9 @@ export default function Content({ group, space }: { group: any; space: any }) {
             </div>
           </div>
         </div>
-        
+
+        {/* bouton de payement */}
+
         <Card>
           <CardHeader>
             <CardTitle>Détail du paiement</CardTitle>
@@ -303,6 +322,7 @@ export default function Content({ group, space }: { group: any; space: any }) {
               <Label htmlFor="date">
                 {isMonthlyTarif ? "Choisissez les mois" : "Choisissez les dates"}
               </Label>
+              
               <Calendar
                 id="date"
                 mode="multiple"
@@ -311,7 +331,8 @@ export default function Content({ group, space }: { group: any; space: any }) {
                 numberOfMonths={2}
                 className="rounded-md border"
                 disabled={(date) =>
-                  isMonthlyTarif ? date.getDate() !== 1 : false
+                 isMonthlyTarif ? date.getDate() !== 1 : false
+                  
                 }
               />
             </div>
@@ -320,6 +341,7 @@ export default function Content({ group, space }: { group: any; space: any }) {
                 Total: {totalAmount} FCFA
               </div>
             )}
+              {/* bouton de confirmation */}
             <Button
               type="submit"
               disabled={
@@ -334,6 +356,7 @@ export default function Content({ group, space }: { group: any; space: any }) {
                 <ArrowUpRight className="h-4 w-4" />
               </span>
             </Button>
+
           </CardContent>
         </Card>
       </form>

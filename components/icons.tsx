@@ -53,7 +53,7 @@ export const Icons: any = {
   logo: ({ className, ...props }: { className: string }) => (
     <img
       src="/images/Logo Original.png"
-      alt="NOVIS CO-WORKING"
+      alt="AITECH-CI"
       className={className}
       {...props}
     />
@@ -61,7 +61,7 @@ export const Icons: any = {
   logo_rogner: ({ className, ...props }: { className: string }) => (
     <img
       src="/images/Logo Original.png"
-      alt="NOVIS CO-WORKING"
+      alt="AITECH-CI"
       className={className}
       {...props} 
     />
@@ -78,8 +78,8 @@ export const Icons: any = {
   ),
   logo_black_rogner: ({ className, ...props }: { className: string }) => (
     <img
-      src="/images/logo AITECH Black.jpeg"
-      alt="NOVIS CO-WORKING"
+      src="/images/Logo Original.png"
+      alt="AITECH-CI"
       className={className}
       {...props}
     />

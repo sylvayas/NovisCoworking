@@ -1,5 +1,5 @@
 export const siteConfig = {
-  name: "NOVIS CO-WORKING",
+  name: "AITECH-CI",
   url: "",
   ogImage: "",
   description:

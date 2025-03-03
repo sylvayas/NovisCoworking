@@ -668,6 +668,7 @@ export const espaces = [
           "Accueil de vos visiteurs",
           "Superficie de 10m2",
         ],
+        
         tarifs: [
           {
             name: "Tarif semaine",
@@ -1123,8 +1124,8 @@ export const formulas: Formula[] = [
     color:'text-novis_orange',
     contact: {
       phone: "+225 01 43 44 86 86",
-      email: "info@noviscoworking.com",
-      address: "Cocody Saint Viateur, près du Nouveau Rond Point.",
+      email: "info@aitech-ci.com",
+      address: "Cocody cité des Arts, Abidjan",
     },
   },
   {
@@ -1138,8 +1139,8 @@ export const formulas: Formula[] = [
     color:'text-novis_yellow',
     contact: {
       phone: "+225 01 43 44 86 86",
-      email: "info@noviscoworking.com",
-      address: "Cocody Saint Viateur, près du Nouveau Rond Point.",
+      email: "info@aitech-ci.com",
+      address: "Cocody cité des Arts, Abidjan",
     },
   },
   {
@@ -1153,8 +1154,8 @@ export const formulas: Formula[] = [
     color:'text-novis_green',
     contact: {
       phone: "+225 01 43 44 86 86",
-      email: "info@noviscoworking.com",
-      address: "Cocody Saint Viateur, près du Nouveau Rond Point.",
+      email: "info@aitech-ci.com",
+      address: "Cocody cité des Arts, Abidjan",
     },
   },
 ];

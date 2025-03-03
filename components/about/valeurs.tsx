@@ -58,31 +58,37 @@ export function AnimatedBeamMultipleOutputDemo({
                 <div className="flex flex-col justify-center gap-2">
                     <div ref={div1Ref} className="flex items-center bg-white p-[1px]">
                         <Circle>
-                            N
+                            A
                         </Circle>
                         <span className="font-medium">ous</span>
                     </div>
                     <div ref={div2Ref} className="flex items-center bg-white p-[1px]">
                         <Circle>
-                            O
+                            I
                         </Circle>
-                        <span className="font-medium">ptimiste</span>
+                        <span className="font-medium"> ptimiste</span>
                     </div>
                     <div ref={div3Ref} className="flex items-center bg-white p-[1px]">
                         <Circle>
-                            V
+                            T
                         </Circle>
-                        <span className="font-medium">ision</span>
+                        <span className="font-medium"> ision</span>
                     </div>
                     <div ref={div4Ref} className="flex items-center bg-white p-[1px]">
                         <Circle>
-                            I
+                            E
                         </Circle>
-                        <span className="font-medium">ntégrité</span>
+                        <span className="font-medium"> ntégrité</span>
                     </div>
                     <div ref={div5Ref} className="flex items-center bg-white p-[1px]">
                         <Circle>
-                            S
+                            C
+                        </Circle>
+                        <span className="font-medium"> érénité</span>
+                    </div>
+                    <div ref={div5Ref} className="flex items-center bg-white p-[1px]">
+                        <Circle>
+                            H
                         </Circle>
                         <span className="font-medium">érénité</span>
                     </div>
